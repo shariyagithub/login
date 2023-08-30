@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position and relative</title>
+</head>
+<style>
+    /* css position: static(defualt),relative,absolute,fixed,sticky */
+    .box{
+        border:3px solid rgb(34,56,45);
+        width: 140px;
+        height:100px;
+        margin:6px;
+        display:inline-block;
+    }
+    #box3{
+        /* relative:relative to its normal position and will leave a gap */
+        /* position:relative; */
+        /* absolute:relative to a position of its first parent */
+        /* position:absolute;
+
+        top:45px;
+        left:45px; */
+        /* fixed:position relative to the browser window */
+        /* position:fixed;
+        right:4px; */
+        position:sticky;
+        top:4px;
+    }
+    .container{
+        border:4px solid black;
+        background-color: rgb(247, 226, 242);
+        height: 1200px;
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
